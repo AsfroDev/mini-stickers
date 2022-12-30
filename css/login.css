@@ -1,0 +1,167 @@
+.header{
+    width: 100%;
+    height: 10vh;
+    background-color: #3C4048;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header h5 {
+    padding-left: 15px;
+    width: 50%;
+    font-size: 1.3rem;
+    color:#b5b7bb;
+    margin: 0;
+}
+.header-right{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.header #ajuda-btn{
+    width: 30%;
+    min-width: 72px;
+    max-width: 170px;
+    font-size: 0.8rem;
+    border: 1px solid #B2B2B2;
+    border-radius: 1px;
+    background: none;
+    margin: 0;
+    margin-right: 10px;
+    color: #b5b7bb;
+    transition: 210ms;
+}
+#ajuda-btn:hover{
+    background-color:#EAEAEA;
+    color: #7a7b7e;
+}
+.login-card{
+    /*  outline: rgb(223, 91, 91) solid 2px;
+    box-shadow: 5px 5px cornflowerblue; */ 
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #B2B2B2;    
+}
+form{
+    width: 85%;
+    height: 85%;
+    max-width: 580px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;  
+}
+button{
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    outline: none;
+    padding:5px;
+    background-color:#EAEAEA;
+    border-radius: 10px;
+    border: none;
+    justify-content: flex-end;
+    cursor: pointer;
+    color: #7a7b7e;
+    letter-spacing: 1px;
+    border: #3C4048 1px solid;
+    transition: 210ms;
+}
+button:hover{
+    background-color:#3C4048;
+}
+button:active{
+    background-color:#26282c;
+}
+input{
+    letter-spacing: 1.5px;
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    outline: none;
+    background-color: #EAEAEA;
+    color: #7a7b7e;
+    font-size: 14px;
+    padding: 20px 0;
+    padding-left: 2.5%;
+    font-size: smaller;
+    border: #3C4048 1px solid;
+    border-radius: 5px;
+    transition: 250ms;
+}
+input:focus{
+    background-color:#3c404879;
+    color: #EAEAEA;
+}
+input:focus::placeholder {
+    color: #EAEAEA;
+}
+
+h5{
+    width: 100%;
+    margin-bottom: 15px;
+    color: #3C4048;
+    cursor: none;
+    font-size: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;   
+}
+img{
+    position: relative;
+    width: 50px;
+    background: none;
+    opacity: 70%;
+}
+span{
+    width: 100%;
+    color: #3C4048;
+    text-align: end;
+}
+a#register{
+    width: 100%;
+    text-align: end;
+    color: #7a7b7e;
+    cursor: pointer;
+}
+span#forgot{
+    margin-top: 15px;
+    color: #3C4048; 
+    cursor: pointer;  
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 50px;
+    background-color: #3C4048;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.center-footer>span{
+    color: #b5b7bb;
+    font-size: 20px;
+}
+.center-footer{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and (max-width:800px)  {
+    .footer{
+        position: relative;
+        bottom: 0;       
+    }
+    .login-card{
+        height: 70vh;
+    }
+}

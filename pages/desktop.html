@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/desktop.css">
+
+    <script defer src="/js/desktop.js"></script>
+
+    <title>Stickers</title>
+</head>
+<body>
+
+    <div class="head">
+
+        <h5>Stickers</h5>
+
+        <div class="right-buttons-head">  
+            <span class="btn-add">Adicionar Novo</span>  
+        </div>
+        
+    </div>
+    
+    <div class="main">
+        <div class="overlay"></div>
+        <div class="grid">
+            <img id="img" src="/img/add-sticker.png" alt="">
+        </div>  
+
+        <div class="modal-window">
+            <div class="modal-head">
+                <span id="title-modal-span">Novo Sticker</span>
+                <button id="close-modal-btn">X</button>
+            </div>
+            <div class="modal-body">
+                <textarea type="text" id="inputTextModal" placeholder="Escreva aqui..." maxlength="50"></textarea>
+                <div class="text-area-lenght">/50</div>
+    
+                <div class="modal-footer">
+                    <div class="color-selector">
+                        <div class="select-color-night"></div>
+                        <div class="select-color-paper"></div>
+                        <div class="select-color-light"></div>
+                    </div>
+                    <div class="font-selector">
+                        <div class="italic">f</div>
+                        <div class="bolder">B</div>
+                        <div class="normal">a</div>
+                    </div>
+                    <div class="btn-save-sticker"><button>Salvar</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-delete">
+            <div class="popup-head">
+                <button id="btn-cancel-popup">X</button>
+            </div>
+            <div class="popup-body">Deletar este Sticker?</div>
+            <div class="popup-footer">
+                <button id="btn-delete-popup">Deletar</button>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    
+
+</body>
+</html>
