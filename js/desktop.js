@@ -25,6 +25,7 @@ var boldswitch = 0
 btnAdd.addEventListener('click', () => {
     imgInitial.style.display = 'none'
     openModalWindow()
+    deactivateAddBtn()
 })  
 
 //modal
@@ -39,6 +40,7 @@ closeModalBtn.addEventListener('click', () => {
         textArea.style.fontWeight = 'normal'
         overlay.style.display = 'none'
     }, 130);
+    reactivateAddBtn()
 })
 
 //modal lenght count
@@ -99,6 +101,7 @@ btnFontNormal.addEventListener('click', () => {
 })
 //modal btn save sticker action
 saveStickerModalBtn.addEventListener('click', () => {
+    reactivateAddBtn()
     createSticker()
 })  
 
@@ -152,6 +155,7 @@ function createSticker() {
     newSticker.addEventListener('click', () => {
         stickerSelected = document.getElementById(event.target.id)
         openDestroySticker()
+        deactivateAddBtn()
         
     }) 
 }
@@ -170,6 +174,8 @@ function openDestroySticker(){
 
         overlay.style.display = 'none'
         popUpDestroy.style.display = 'none'
+
+        reactivateAddBtn()
     }) 
     //if clicked accept / destroy and close window    
     btnDeletePopup.addEventListener('click', () => {
@@ -178,5 +184,14 @@ function openDestroySticker(){
 
         overlay.style.display = 'none'
         popUpDestroy.style.display = 'none'
+
+        reactivateAddBtn()
     }) 
+}
+
+function deactivateAddBtn(){
+    btnAdd.style.pointerEvents ='none'
+}
+function reactivateAddBtn(){
+    btnAdd.style.pointerEvents = 'all'
 }
